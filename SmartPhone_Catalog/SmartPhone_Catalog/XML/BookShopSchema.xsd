@@ -1,120 +1,92 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-
-    <xs:element name="smartphone_catalog">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="smartphone_specs">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element maxOccurs="unbounded" name="smartphone">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="model" type="xs:string"/>
-                                        <xs:element name="body">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                  <xs:element name="dimensions" type="xs:string"/>
-                                                  <xs:element name="weight" type="xs:integer"/>
-                                                  <xs:element name="build" type="xs:string"/>
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
-                                        <xs:element name="display">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                  <xs:element name="type" type="xs:string"/>
-                                                  <xs:element name="size" type="xs:double"/>
-                                                  <xs:element name="resolution" type="xs:string"/>
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
-                                        <xs:element name="camera">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                  <xs:element name="specs" type="xs:string"/>
-                                                  <xs:element name="features" type="xs:string"/>
-                                                  <xs:element name="video_quality" type="xs:string"
-                                                  />
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
-                                        <xs:element name="battery" type="xs:string"/>
-                                        <xs:element name="platform">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                  <xs:element name="os" type="xs:string"/>
-                                                  <xs:element name="chipset" type="xs:string"/>
-                                                  <xs:element name="cpu" type="xs:string"/>
-                                                  <xs:element name="gpu" type="xs:string"/>
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
-                                        <xs:element name="miscelanious">
-                                            <xs:complexType>
-                                                <xs:attribute name="wlan" type="xs:string"/>
-                                                <xs:attribute name="bluetooth" type="xs:string"/>
-                                                <xs:attribute name="usb" type="xs:string"/>
-                                            </xs:complexType>
-                                        </xs:element>
-                                    </xs:sequence>
-                                    <xs:attribute name="smartphone_id" type="xs:int" use="required"/>
-                                    <xs:attribute name="store_id" type="xs:int" use="required"/>
-                                    <xs:attribute name="brand_id" type="xs:int" use="required"/>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="smartphone_prices">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element maxOccurs="unbounded" name="smartphone_price">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="price" type="xs:float"/>
-                                    </xs:sequence>
-                                    <xs:attribute name="smartphone_id" type="xs:int"/>
-                                    <xs:attribute name="currency" type="xs:string"/>
-                                    <xs:attribute name="price_id" type="xs:int"/>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="brands">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element maxOccurs="unbounded" name="brand">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="brand_name" type="xs:string"/>
-                                    </xs:sequence>
-                                    <xs:attribute name="brand_id" type="xs:int"/>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="stores">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element maxOccurs="unbounded" name="store">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="country" type="xs:string"/>
-                                        <xs:element name="city" type="xs:string"/>
-                                        <xs:element name="street" type="xs:string"/>
-                                        <xs:element name="number" type="xs:integer"/>
-                                    </xs:sequence>
-                                    <xs:attribute name="store_id" type="xs:int"/>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-            </xs:sequence>
-            <xs:attribute name="shop_id" type="xs:byte"/>
-        </xs:complexType>
-    </xs:element>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="OnlineCosmeticsShop">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element type="xs:string" name="Name"/>
+				<xs:element name="Employees">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Employee" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:choice maxOccurs="unbounded" minOccurs="0">
+										<xs:element type="xs:string" name="EmployeeName"/>
+										<xs:element name="Address">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element type="xs:string" name="Country"/>
+													<xs:element type="xs:string" name="City"/>
+													<xs:element type="xs:string" name="Street"/>
+													<xs:element type="xs:short" name="Number"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element type="xs:short" name="Age"/>
+										<xs:element type="xs:string" name="Position"/>
+										<xs:element type="xs:short" name="Salary"/>
+										<xs:element type="xs:string" name="Email"/>
+										<xs:element type="xs:int" name="Telephone"/>
+									</xs:choice>
+									<xs:attribute type="xs:byte" name="employeeId" use="optional"/>
+									<xs:attribute type="xs:string" name="gender" use="optional"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Orders">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Order" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Products">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Product">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element type="xs:short" name="Code"/>
+																<xs:element type="xs:string" name="Category"/>
+																<xs:element type="xs:string" name="Description"/>
+																<xs:element type="xs:float" name="Price"/>
+															</xs:sequence>
+															<xs:attribute type="xs:byte" name="productId" use="optional"/>
+															<xs:attribute type="xs:byte" name="productOrderId" use="optional"/>
+															<xs:attribute type="xs:short" name="count" use="optional"/>
+															<xs:attribute type="xs:string" name="customerName" use="optional"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element type="xs:float" name="TotalPrice"/>
+									</xs:sequence>
+									<xs:attribute type="xs:byte" name="employeeId" use="optional"/>
+									<xs:attribute type="xs:byte" name="orderId" use="optional"/>
+									<xs:attribute type="xs:short" name="limitPrice" use="optional"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Contacts">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Contact">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="Email"/>
+										<xs:element type="xs:string" name="Phone"/>
+										<xs:element type="xs:int" name="Fax"/>
+									</xs:sequence>
+									<xs:attribute type="xs:byte" name="contactId"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute type="xs:byte" name="shopId"/>
+		</xs:complexType>
+	</xs:element>
 </xs:schema>

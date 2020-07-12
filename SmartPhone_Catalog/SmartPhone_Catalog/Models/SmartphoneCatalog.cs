@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 
 namespace BookShop.Models
 {
-    [Serializable, XmlRoot("smartphone_catalog")]
+    [Serializable, XmlRoot("OnlineCosmeticsShop")]
     public class SmartphoneCatalog
     {
         [XmlArray("smartphone_specs")]

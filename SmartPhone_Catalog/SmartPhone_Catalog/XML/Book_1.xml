@@ -1,59 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<smartphone_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="file:/D:/UNI/ASP/Smartphone_Catalog/Smartphone_Catalog/XML/SmartphoneShopSchema.xsd">
-    <smartphone_specs>
-        <smartphone smartphone_id="10233" store_id="1" brand_id="1001">
-            <model>Redmi 9</model>
-            <body>
-                <dimensions>163.3 x 77 x 9.1 mm (6.43 x 3.03 x 0.36 in)</dimensions>
-                <weight>198</weight>
-                <build>Glass front (Gorilla Glass 3), plastic back, plastic frame</build>
-            </body>
-            <display>
-                <type>IPS LCD capacitive touchscreen, 16M colors</type>
-                <size>6.53</size>
-                <resolution>1080 x 2340 pixels, 19.5:9 ratio</resolution>
-            </display>
-            <camera>
-                <specs>13MP, 8MP, 5MP, 2MP (wide, ultrawide)</specs>
-                <features>LED flash, HDR, panorama</features>
-                <video_quality>1080p@30fps</video_quality>
-            </camera>
-            <battery>Non-removable Li-Po 5020 mAh battery</battery>
-            <platform>
-                <os>Android 10, MIUI 12</os>
-                <chipset>Mediatek Helio G80 (12 nm)</chipset>
-                <cpu>Octa-core (2x2.0 GHz Cortex-A75 and 6x1.8 GHz Cortex-A55)</cpu>
-                <gpu>Mali-G52 MC2</gpu>
-            </platform>
-            <miscelanious wlan="Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot" bluetooth="5.0, A2DP, LE" usb="2.0, Type-C 1.0 reversible connector, USB On-The-Go"/>
-        </smartphone>
-    </smartphone_specs>
-    <smartphone_prices>
-        <smartphone_price price_id="0" currency="BGN" smartphone_id="10233">
-            <price>330</price>
-        </smartphone_price>
-        <smartphone_price price_id="1" currency="EUR" smartphone_id="10233">
-            <price>160</price>
-        </smartphone_price>
-    </smartphone_prices>
-    <brands>
-        <brand brand_id="1001">
-            <brand_name>Xiaomi</brand_name>
-        </brand>
-    </brands>
-    <stores>
-        <store store_id="1">
-            <country>България</country>
-            <city>София</city>
-            <street>бул. Цариградско шосе</street>
-            <number>92</number>
-        </store>
-        <store store_id="2">
-            <country>България</country>
-            <city>София</city>
-            <street>бул. Ал. Стамболийски</street>
-            <number>101</number>
-        </store>
-    </stores>
-</smartphone_catalog>
+<?xml version="1.0" encoding="utf-8"?>
+<OnlineCosmeticsShop shopId="1">
+	<Name>Ейвън</Name>
+	<Employees>
+		<Employee employeeId="1" gender="Мъж">
+			<EmployeeName>Илиян</EmployeeName>
+			<Address>
+				<Country>България</Country>
+				<City>София</City>
+				<Street>бул.България</Street>
+				<Number>34</Number>
+			</Address>
+			<Age>35</Age>
+			<Position>Мениджър "Продажби"</Position>
+			<Salary>3000</Salary>
+			<Email>ilian@avon.bg</Email>
+		</Employee>
+		<Employee employeeId="2" gender="Жена">
+			<EmployeeName>Станислава</EmployeeName>
+			<Address>
+				<Country>България</Country>
+				<City>Враца</City>
+				<Street>бул.Гео Милев</Street>
+				<Number>84</Number>
+			</Address>
+			<Age>26</Age>
+			<Position>Зонален мениджър</Position>
+			<Email>stanislava@avon.bg</Email>
+			<Telephone>0882532756</Telephone>
+			<Salary>2500</Salary>
+		</Employee>
+	</Employees>
+	<Orders>
+		<Order employeeId="1" orderId="1" limitPrice="500">
+			<Products>
+				<Product productId="1" productOrderId="1" count="2" customerName="Пешо">
+					<Code>12345</Code>
+					<Category>Парфюми</Category>
+					<Description>Little Black Dress</Description>
+					<Price>21.99</Price>
+				</Product>
+			</Products>
+			<TotalPrice>21.99</TotalPrice>
+		</Order>
+		<Order employeeId="2" limitPrice="500" orderId="2">
+			<Products>
+				<Product productId="2" productOrderId="2" count="3" customerName="Николета" >
+					<Code>12275</Code>
+					<Category>Кремове</Category>
+					<Description>Крем за лице Anew</Description>
+					<Price>15.99</Price>
+				</Product>
+			</Products>
+			<TotalPrice>31.98</TotalPrice>
+		</Order>
+	</Orders>
+	<Contacts>
+		<Contact contactId="1">
+			<Email>contacts@avon.bg</Email>
+			<Phone>123 124 125</Phone>
+			<Fax>555444333</Fax>
+		</Contact>
+	</Contacts>
+</OnlineCosmeticsShop>
