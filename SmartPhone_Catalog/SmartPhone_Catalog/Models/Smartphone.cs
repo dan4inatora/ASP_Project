@@ -17,17 +17,17 @@ namespace BookShop.Models
         [XmlAttribute("brand_id")]
         public int BrandId;
         [XmlElement("body")]
-        public Body Body;
+        public Address Body;
         [XmlElement("display")]
         public Display Display;
         [XmlElement("camera")]
-        public Camera Camera;
+        public Contact Camera;
         [XmlElement("battery")]
         public string Battery;
         [XmlElement("platform")]
-        public Platform Platform;
+        public Product Platform;
         [XmlElement("miscelanious")]
-        public Miscellanious Miscellanious;
+        public Order Miscellanious;
 
         //public smartphone()
         //{

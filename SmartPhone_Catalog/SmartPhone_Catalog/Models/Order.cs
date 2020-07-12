@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 
 namespace BookShop.Models
 {
-    public class Miscellanious
+    public class Order
     {
         [XmlAttribute("wlan")]
         public string Wlan;

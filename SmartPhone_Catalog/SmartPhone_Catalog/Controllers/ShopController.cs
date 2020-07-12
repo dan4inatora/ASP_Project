@@ -25,11 +25,11 @@ namespace BookShop.Controllers
 
             try
             {
-                SmartphoneCatalog onlineCosmeticShop = ObjectConstuctor.constructXMLObject(formData);
+                Models.BookShop onlineCosmeticShop = ObjectConstuctor.constructXMLObject(formData);
 
-                XmlSerializer xmlSerializer = new XmlSerializer(typeof(SmartphoneCatalog));
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(Models.BookShop));
                 FileStream fileStream = new FileStream(
-                    $"C:\\Users\\Dan4inatora\\Desktop\\Kris_proj\\SmartPhone_Catalog\\SmartPhone_Catalog\\XML\\Book_20.xml",
+                    $"C:\\Users\\Dan4inatora\\Desktop\\Kris_proj\\SmartPhone_Catalog\\SmartPhone_Catalog\\XML\\G_Books.xml",
                     FileMode.CreateNew);
 
                 using (StreamWriter streamWriter = new StreamWriter(fileStream))
@@ -37,7 +37,7 @@ namespace BookShop.Controllers
                     xmlSerializer.Serialize(streamWriter, onlineCosmeticShop);
                 }
 
-                string name = "Smartphone_20.xml";
+                string name = "G_Books.xml";
                 bool isValidXML = XMLValidator.isValidXML(name);
 
                 if (isValidXML)

@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 
 namespace BookShop.Models
 {
-    public class Platform
+    public class Product
     {
         [XmlElement("os")]
         public string OS;
@@ -17,11 +17,11 @@ namespace BookShop.Models
         [XmlElement("gpu")]
         public string GPU;
 
-        public Platform()
+        public Product()
         {
         }
 
-        public Platform(string os, string chipset, string cpu, string gpu)
+        public Product(string os, string chipset, string cpu, string gpu)
         {
             if (!String.IsNullOrEmpty(os))
             {

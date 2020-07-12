@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 
 namespace BookShop.Models
 {
-    public class Body
+    public class Address
     {
         [XmlElement("dimensions")]
         public string Dimensions;
@@ -15,11 +15,11 @@ namespace BookShop.Models
         [XmlElement("build")]
         public string Build;
 
-        public Body()
+        public Address()
         {
         }
 
-        public Body(string dimensions, double weight, string build)
+        public Address(string dimensions, double weight, string build)
         {
             if (!String.IsNullOrEmpty(dimensions))
             {

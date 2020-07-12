@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 
 namespace BookShop.Models
 {
-    public class Camera
+    public class Contact
     {
         [XmlElement("specs")]
         public string Specs;
@@ -15,11 +15,11 @@ namespace BookShop.Models
         [XmlElement("video_quality")]
         public string VideoQuality;
 
-        public Camera()
+        public Contact()
         {
         }
 
-        public Camera(string specs, string features, string videoQuality)
+        public Contact(string specs, string features, string videoQuality)
         {
             if (!String.IsNullOrEmpty(specs))
             {
