@@ -27,7 +27,7 @@ namespace BookShop.Models
             return rowsCount;
         }
 
-        public static bool fillDatabase(BookShop smartphoneCatalog)
+        public static bool fillDatabase(SmartphoneCatalog smartphoneCatalog)
         {
             try
             {

@@ -25,9 +25,9 @@ namespace BookShop.Controllers
 
             try
             {
-                Models.BookShop onlineCosmeticShop = ObjectConstuctor.constructXMLObject(formData);
+                SmartphoneCatalog onlineCosmeticShop = ObjectConstuctor.constructXMLObject(formData);
 
-                XmlSerializer xmlSerializer = new XmlSerializer(typeof(Models.BookShop));
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(SmartphoneCatalog));
                 FileStream fileStream = new FileStream(
                     $"C:\\Users\\Dan4inatora\\Desktop\\Kris_proj\\SmartPhone_Catalog\\SmartPhone_Catalog\\XML\\G_Books.xml",
                     FileMode.CreateNew);

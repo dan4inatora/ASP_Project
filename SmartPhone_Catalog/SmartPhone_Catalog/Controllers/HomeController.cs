@@ -23,7 +23,7 @@ namespace BookShop.Controllers
 
         public IActionResult Serialize()
         {
-            XmlSerializer xmlSerializer = new XmlSerializer(typeof(Models.BookShop));
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(SmartphoneCatalog));
 
             var filesInfo = new Dictionary<string, bool>();
 
@@ -41,8 +41,8 @@ namespace BookShop.Controllers
 
                     if (validXML)
                     {
-                        Models.BookShop smartphoneCatalog =
-                            (Models.BookShop) xmlSerializer.Deserialize(fileStream);
+                        SmartphoneCatalog smartphoneCatalog =
+                            (SmartphoneCatalog) xmlSerializer.Deserialize(fileStream);
                         var success = DBManipulator.fillDatabase(smartphoneCatalog);
                         ViewBag.Sucess = success;
                     }

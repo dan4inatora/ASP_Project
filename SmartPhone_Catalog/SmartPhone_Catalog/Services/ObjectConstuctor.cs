@@ -6,9 +6,9 @@ namespace BookShop.Models
 {
     public class ObjectConstuctor
     {
-        public static BookShop constructXMLObject(IFormCollection formData)
+        public static SmartphoneCatalog constructXMLObject(IFormCollection formData)
         {
-            BookShop smartphoneCatalog = new BookShop();
+            SmartphoneCatalog smartphoneCatalog = new SmartphoneCatalog();
 
             //smartphoneCatalog.Smartphones = new smartphone[1];
             //smartphoneCatalog.Prices = new smartphone_price[1];
