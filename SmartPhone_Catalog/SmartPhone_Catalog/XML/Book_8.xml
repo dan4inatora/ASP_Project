@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smartphone_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/UNI/ASP/Smartphone_Catalog/Smartphone_Catalog/XML/SmartphoneShopSchema.xsd">
+    <smartphone_specs>
+        <smartphone smartphone_id="9847" store_id="8" brand_id="1004">
+            <model>iPhone 11 pro</model>
+            <body>
+                <dimensions>144 x 71.4 x 8.1 mm (5.67 x 2.81 x 0.32 in)</dimensions>
+                <weight>148</weight>
+                <build>Glass front, glass back, aluminum frame</build>
+            </body>
+            <display>
+                <type>Super Retina XDR OLED capacitive touchscreen, 16M colors</type>
+                <size>5.8</size>
+                <resolution>1125 x 2436 pixels, 19.5:9 ratio</resolution>
+            </display>
+            <camera>
+                <specs>33MP, 18MP, 15MP, 21MP (wide, ultrawide)</specs>
+                <features>HDR, panorama</features>
+                <video_quality>4K@24/30/60fps, 1080p@30/60/120fps, gyro-EIS</video_quality>
+            </camera>
+            <battery>Non-removable Li-Ion 3046 mAh battery (11.67 Wh)</battery>
+            <platform>
+                <os>IOS 13</os>
+                <chipset>Apple A13 Bionic (7 nm+)</chipset>
+                <cpu>Hexa-core (2x2.65 GHz Lightning + 4x1.8 GHz Thunder))</cpu>
+                <gpu>Apple GPU 4-core</gpu>
+            </platform>
+            <miscelanious wlan="Wi-Fi 802.11  a/b/g/n/ac, dual-band, Wi-Fi Direct" bluetooth="5.0, A2DP, LE" usb="2.0, Type-C 1.0 reversible connector"/>
+        </smartphone>
+    </smartphone_specs>
+    <smartphone_prices>
+        <smartphone_price price_id="9" currency="USD" smartphone_id="9847">
+            <price>981.82</price>
+        </smartphone_price>
+    </smartphone_prices>
+    <brands>
+        <brand brand_id="1004">
+            <brand_name>Apple</brand_name>
+        </brand>
+    </brands>
+    <stores>
+        <store store_id="8">
+            <country>България</country>
+            <city>София</city>
+            <street>Ринг Мол, магазин Apple</street>
+            <number>1</number>
+        </store>
+    </stores>
+</smartphone_catalog>

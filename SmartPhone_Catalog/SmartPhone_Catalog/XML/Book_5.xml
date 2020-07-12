@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smartphone_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/UNI/ASP/Smartphone_Catalog/Smartphone_Catalog/XML/SmartphoneShopSchema.xsd">
+    <smartphone_specs>
+        <smartphone smartphone_id="10095" store_id="5" brand_id="1003">
+            <model>Xperia 10 II</model>
+            <body>
+                <dimensions>165.1 x 71.1 x 7.6 mm (6.5 x 2.80 x 0.30 in)</dimensions>
+                <weight>181</weight>
+                <build>Glass front (Gorilla Glass 6), aluminium frame</build>
+            </body>
+            <display>
+                <type>OLED capacitive touchscreen, 1B colors</type>
+                <size>6.5</size>
+                <resolution>1644 x 3840 pixels, 21:9 ratio</resolution>
+            </display>
+            <camera>
+                <specs>12MP, 8MP, 8MP (wide, ultrawide)</specs>
+                <features>LED flash, HDR, panorama</features>
+                <video_quality>4K@30fps, 1080p@30fps</video_quality>
+            </camera>
+            <battery>Non-removable Li-Po 5000 mAh battery</battery>
+            <platform>
+                <os>Android 10</os>
+                <chipset>Qualcomm SM8250 Snapdragon 865 (7 nm+)</chipset>
+                <cpu>Octa-core (1x2.84 GHz Kryo 585 and 3x2.42 GHz Kryo 585 and 4x1.8 GHz Kryo 585)</cpu>
+                <gpu>Adreno 650</gpu>
+            </platform>
+            <miscelanious wlan="Wi-Fi 802.11  a/b/g/n/ac, dual-band, Wi-Fi Direct" bluetooth="5.0, A2DP, LE, aptX HD" usb="2.0, Type-C 1.0 reversible connector"/>
+        </smartphone>
+    </smartphone_specs>
+    <smartphone_prices>
+        <smartphone_price price_id="6" currency="EUR" smartphone_id="10095">
+            <price>350.70</price>
+        </smartphone_price>
+    </smartphone_prices>
+    <brands>
+        <brand brand_id="1003">
+            <brand_name>Sony</brand_name>
+        </brand>
+    </brands>
+    <stores>
+        <store store_id="5">
+            <country>България</country>
+            <city>София</city>
+            <street>бул. Европа</street>
+            <number>171</number>
+        </store>
+    </stores>
+</smartphone_catalog>

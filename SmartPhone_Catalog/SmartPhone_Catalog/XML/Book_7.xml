@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smartphone_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/UNI/ASP/Smartphone_Catalog/Smartphone_Catalog/XML/SmartphoneShopSchema.xsd">
+    <smartphone_specs>
+        <smartphone smartphone_id="148" store_id="5" brand_id="1004">
+            <model>iPhone SE</model>
+            <body>
+                <dimensions>138.4 x 67.3 x 7.3 mm (5.45 x 2.65 x 0.29 in)</dimensions>
+                <weight>148</weight>
+                <build>Glass front, glass back, aluminum frame</build>
+            </body>
+            <display>
+                <type>Retina IPS LCD capacitive touchscreen, 16M colors</type>
+                <size>4.7</size>
+                <resolution>750 x 1334 pixels, 16:9 ratio</resolution>
+            </display>
+            <camera>
+                <specs>33MP, 18MP, 15MP, 21MP (wide, ultrawide)</specs>
+                <features>LED flash, HDR, panorama</features>
+                <video_quality>1080p@30fps</video_quality>
+            </camera>
+            <battery>Non-removable Li-Po 5000 mAh battery</battery>
+            <platform>
+                <os>IOS 13</os>
+                <chipset>Apple A13 Bionic (7 nm+)</chipset>
+                <cpu>Hexa-core (2x2.65 GHz Lightning + 4x1.8 GHz Thunder))</cpu>
+                <gpu>Apple GPU 4-core</gpu>
+            </platform>
+            <miscelanious wlan="Wi-Fi 802.11  a/b/g/n/ac, dual-band, Wi-Fi Direct" bluetooth="5.0, A2DP, LE" usb="2.0, Type-C 1.0 reversible connector"/>
+        </smartphone>
+    </smartphone_specs>
+    <smartphone_prices>
+        <smartphone_price price_id="9" currency="EUR" smartphone_id="148">
+            <price>466.90</price>
+        </smartphone_price>
+        <smartphone_price price_id="10" currency="USD" smartphone_id="148">
+            <price>378.90</price>
+        </smartphone_price>
+    </smartphone_prices>
+    <brands>
+        <brand brand_id="1004">
+            <brand_name>Apple</brand_name>
+        </brand>
+    </brands>
+    <stores>
+        <store store_id="4">
+            <country>България</country>
+            <city>София</city>
+            <street>бул. Черни връх</street>
+            <number>22</number>
+        </store>
+        <store store_id="5">
+            <country>България</country>
+            <city>София</city>
+            <street>бул. Европа</street>
+            <number>171</number>
+        </store>
+        <store store_id="6">
+            <country>България</country>
+            <city>София</city>
+            <street>бул. Азия</street>
+            <number>1</number>
+        </store>
+    </stores>
+</smartphone_catalog>

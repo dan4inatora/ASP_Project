@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container" style="background: lightgray">
+    
+    <div style="">
+        <h4 style="text-align: center"></h4>
+    </div>
+    
+    <div style="margin-top: 40px" class="row">
+        <div class="col-xs-6">
+            <a asp-controller="Home" asp-action="Serialize">
+                <button class="btn btn-primary btn-block">Validate XML files</button>
+            </a>
+        </div>
+        <div class="col-xs-6">
+            <a asp-controller="Shop" asp-action="Create">
+                <button class="btn btn-secondary">Create new XML file</button>
+            </a>
+        </div>
+    </div>
+</div>
+

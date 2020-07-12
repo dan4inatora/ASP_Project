@@ -1,0 +1,266 @@
+﻿@model ViewComponent
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+
+    <form id="addShop" method="post" asp-controller="Shop" asp-action="Save">
+
+        <div class="form-group row">
+            <div class="col-lg-6">
+                <label for="name-input">Catalog name</label>
+                <input id="name-input" class="col-lg-5 form-control" type="text" name="catalog" />
+            </div>
+        </div>
+
+        <hr />
+
+        <div>
+            <h4>Smartphone brand</h4>
+            <hr />
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label for="brand-name">Brand Name</label>
+                    <input id="brand-name" class="col-lg-5 form-control" type="text" name="brand_name" required="true" />
+                </div>`
+            </div>
+        </div>
+
+        <div>
+            <hr />
+            <h4>Smartphone specifications</h4>
+            <hr />
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Model Name</label>
+                    <input class="col-lg-5 form-control" type="text" name="model" required="true" />
+                </div>
+            </div>
+
+            <h5>Body</h5>
+            <hr />
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Dimensions</label>
+                    <input class="col-lg-5 form-control" type="text" name="dimensions" required="true" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Weight</label>
+                    <input class="col-lg-5 form-control" type="number" name="weight" required="true" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Build</label>
+                    <input class="col-lg-5 form-control" type="text" name="build" required="true" />
+                </div>
+            </div>
+
+            <hr />
+            <h4>Display</h4>
+            <hr />
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Type</label>
+                    <input class="col-lg-5 form-control" type="text" name="type" required="true" />
+                </div>
+            </div>
+
+            <br />
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Size</label>
+                    <input class="col-lg-5 form-control" type="number" name="size" required="true" />
+                </div>
+            </div>
+
+            <br />
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Resolution</label>
+                    <input class="col-lg-5 form-control" type="text" name="resolution" required="true" />
+                </div>
+            </div>
+
+            <hr />
+            <h4>Camera</h4>
+            <hr />
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Camera specs</label>
+                    <input class="col-lg-5 form-control" type="text" name="specs" required="true" />
+                </div>
+            </div>
+
+            <br />
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Features</label>
+                    <input class="col-lg-5 form-control" type="text" name="features" required="true" />
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Video quality</label>
+                    <input class="col-lg-5 form-control" type="text" name="video_quality" required="true" />
+                </div>
+            </div>
+
+            <hr />
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Battery</label>
+                    <input class="col-lg-5 form-control" type="text" name="battery" required="true" />
+                </div>
+            </div>
+
+            <hr />
+            <h4>Platform</h4>
+            <hr />
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>OS</label>
+                    <input class="col-lg-5 form-control" type="text" name="os" required="true" />
+                </div>
+            </div>
+
+            <br />
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Chipset</label>
+                    <input class="col-lg-5 form-control" type="text" name="chipset" required="true" />
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>CPU</label>
+                    <input class="col-lg-5 form-control" type="text" name="cpu" required="true" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>GPU</label>
+                    <input class="col-lg-5 form-control" type="text" name="gpu" required="true" />
+                </div>
+            </div>
+
+            <hr />
+            <h4>Miscellanious</h4>
+            <hr />
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>WLAN</label>
+                    <input class="col-lg-5 form-control" type="text" name="wlan" required="true" />
+                </div>
+            </div>
+
+            <br />
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Bluetooth</label>
+                    <input class="col-lg-5 form-control" type="text" name="bluetooth" required="true" />
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>USB</label>
+                    <input class="col-lg-5 form-control" type="text" name="usb" required="true" />
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h4>Price</h4>
+            <hr />
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Currency</label>
+                    <input class="col-lg-5 form-control" type="text" name="currency" required="true" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Price</label>
+                    <input class="col-lg-5 form-control" type="number" name="price" required="true" />
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h4>Store</h4>
+
+            <hr />
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Country</label>
+                    <input class="col-lg-5 form-control" type="text" name="country" required="true" />
+                </div>
+            </div>
+
+            <br />
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>City</label>
+                    <input class="col-lg-5 form-control" type="text" name="city" required="true" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Street</label>
+                    <input class="col-lg-5 form-control" type="text" name="street" required="true" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label>Number</label>
+                    <input class="col-lg-5 form-control" type="number" name="number" required="true" />
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div>
+            <button class="btn btn-primary" type="submit" onclick="$('#addShop').serialize();">Add to catalog</button>
+        </div>
+
+
+    </form>
+
+</div>
+
+</body>
+</html>

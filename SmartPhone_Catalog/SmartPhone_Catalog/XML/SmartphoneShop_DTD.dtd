@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT smartphone_catalog (smartphone_specs, smartphone_prices, brands, stores)>
+    <!ATTLIST smartphone_catalog 
+                shop_id ID #REQUIRED>
+    <!ELEMENT smartphone_specs (smartphone+)>
+        <!ELEMENT smartphone (body, display, camera, battery, platform)>
+            <!ATTLIST smartphone
+                      smartphone_id ID #REQUIRED
+                      store_id IDREFS #REQUIRED
+                      brand_id IDREFS #REQUIRED>
+          <!ELEMENT model (#PCDATA)>
+          <!ELEMENT body (dimensions, weight, build)>
+            <!ELEMENT dimensions (#PCDATA)>
+            <!ELEMENT weight (#PCDATA)>
+            <!ELEMENT build (#PCDATA)>
+          <!ELEMENT display (type, size, resolution)>
+            <!ELEMENT type (#PCDATA)>
+            <!ELEMENT size (#PCDATA)>
+            <!ELEMENT resolution (#PCDATA)>
+          <!ELEMENT camera (specs, features, video_quality)>
+            <!ELEMENT specs (#PCDATA)>
+            <!ELEMENT features (#PCDATA)>
+            <!ELEMENT video_quality (#PCDATA)>
+          <!ELEMENT battery (#PCDATA)>
+          <!ELEMENT platform (os, chipset, cpu, gpu)>
+            <!ELEMENT os (#PCDATA)>
+            <!ELEMENT chipset (#PCDATA)>
+            <!ELEMENT cpu (#PCDATA)>
+            <!ELEMENT gpu (#PCDATA)>
+          <!ELEMENT miscellaneous (#PCDATA)>
+            <!ATTLIST miscellaneous
+                      wlan CDATA #REQUIRED
+                      bluetooth CDATA #REQUIRED
+                      usb CDATA #REQUIRED>
+    <!ELEMENT smartphone_prices (smartphone_price+)>
+        <!ELEMENT smartphone_price (price)>
+            <!ATTLIST smartphone_price
+                      smartphone_id ID #REQUIRED
+                      currency CDATA #REQUIRED>
+	        <!ELEMENT price (#PCDATA)>
+    <!ELEMENT brands (brand_name)>
+        <!ELEMENT brand (brand_name)>
+            <!ATTLIST brand
+                      brand_id ID #REQUIRED>
+            <!ELEMENT brand_name (#PCDATA)>
+    <!ELEMENT stores (store+)>
+            <!ELEMENT store (country, city, street, number)>
+                <!ATTLIST store
+                      store_id ID #REQUIRED>
+                <!ELEMENT country (#PCDATA)>
+                <!ELEMENT city (#PCDATA)>
+                <!ELEMENT street (#PCDATA)>
+                <!ELEMENT number (#PCDATA)>

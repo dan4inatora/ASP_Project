@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smartphone_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/UNI/ASP/Smartphone_Catalog/Smartphone_Catalog/XML/SmartphoneShopSchema.xsd">
+    <smartphone_specs>
+        <smartphone smartphone_id="10236" store_id="8" brand_id="1005">
+            <model>P40 Lite 5G</model>
+            <body>
+                <dimensions>162.3 x 75 x 8.6 mm (6.39 x 2.95 x 0.34 in)</dimensions>
+                <weight>189</weight>
+                <build>Glass front (Gorilla Glass 6), plastic frame</build>
+            </body>
+            <display>
+                <type>LTPS IPS LCD capacitive touchscreen, 16M colors</type>
+                <size>6.53</size>
+                <resolution>1080 x 2400 pixels, 20:9 ratio</resolution>
+            </display>
+            <camera>
+                <specs>64MP, 18MP, 8MP, 2MP(wide, ultrawide, macro, depth)</specs>
+                <features>HDR, panorama, LED Flash</features>
+                <video_quality>4K@30fps, 1080p@30fps</video_quality>
+            </camera>
+            <battery>Non-removable Li-Po 4000 mAh battery</battery>
+            <platform>
+                <os>Android 10, EMUI 10.1, no Google Play Services</os>
+                <chipset>Qualcomm SM8250 Snapdragon 865 (7 nm+)</chipset>
+                <cpu>Octa-core (1x2.36 GHz Cortex-A76 and 3x2.22 GHz Cortex-A76 and 4x1.84 GHz Cortex-A55)</cpu>
+                <gpu>Mali G-52</gpu>
+            </platform>
+            <miscelanious wlan="Wi-Fi 802.11  a/b/g/n/ac, dual-band, Wi-Fi Direct" bluetooth="5.0, A2DP, LE" usb="2.0, Type-C 1.0 reversible connector"/>
+        </smartphone>
+    </smartphone_specs>
+    <smartphone_prices>
+        <smartphone_price price_id="11" currency="BGN" smartphone_id="10236">
+            <price>754.99</price>
+        </smartphone_price>
+    </smartphone_prices>
+    <brands>
+        <brand brand_id="1005">
+            <brand_name>Huawei</brand_name>
+        </brand>
+    </brands>
+    <stores>
+        <store store_id="8">
+            <country>България</country>
+            <city>София</city>
+            <street>бул. Ломско шосе</street>
+            <number>2</number>
+        </store>
+        <store store_id="10">
+            <country>България</country>
+            <city>София</city>
+            <street>бул. Ломско шосе</street>
+            <number>2</number>
+        </store>
+    </stores>
+</smartphone_catalog>

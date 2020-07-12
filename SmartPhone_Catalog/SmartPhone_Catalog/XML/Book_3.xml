@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smartphone_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/UNI/ASP/Smartphone_Catalog/Smartphone_Catalog/XML/SmartphoneShopSchema.xsd">
+    <smartphone_specs>
+        <smartphone smartphone_id="10239" store_id="3" brand_id="1002">
+            <model>Galaxy A21s</model>
+            <body>
+                <dimensions>160.5 x 75.5 x 7.1 mm (6.40 x 2.97 x 0.32 in)</dimensions>
+                <weight>192</weight>
+                <build>Glass front (Gorilla Glass 3), plastic back, plastic frame</build>
+            </body>
+            <display>
+                <type>PLS TFT capacitive touchscreen, 16M colors</type>
+                <size>6.5</size>
+                <resolution>1080 x 2400 pixels, 20:9 ratio</resolution>
+            </display>
+            <camera>
+                <specs>33MP, 18MP, 15MP, 21MP (wide, ultrawide)</specs>
+                <features>LED flash, HDR, panorama</features>
+                <video_quality>1080p@30fps</video_quality>
+            </camera>
+            <battery>Non-removable Li-Po 5000 mAh battery</battery>
+            <platform>
+                <os>Android 10, One UI 2</os>
+                <chipset>Exynos 850 (8nm)</chipset>
+                <cpu>Octa-core (4x2.0 GHz Cortex-A55 and 4x2.0 GHz Cortex-A55)</cpu>
+                <gpu>Mali-G52</gpu>
+            </platform>
+            <miscelanious wlan="Wi-Fi 802.11  a/b/g/n/ac, dual-band, Wi-Fi Direct" bluetooth="5.0, A2DP, LE" usb="2.0, Type-C 1.0 reversible connector"/>
+        </smartphone>
+    </smartphone_specs>
+    <smartphone_prices>
+        <smartphone_price price_id="3" currency="EUR" smartphone_id="10239">
+            <price>180.90</price>
+        </smartphone_price>
+    </smartphone_prices>
+    <brands>
+        <brand brand_id="1002">
+            <brand_name>Samsung</brand_name>
+        </brand>
+    </brands>
+    <stores>
+        <store store_id="4">
+            <country>България</country>
+            <city>София</city>
+            <street>бул. Черни връх</street>
+            <number>22</number>
+        </store>
+    </stores>
+</smartphone_catalog>
